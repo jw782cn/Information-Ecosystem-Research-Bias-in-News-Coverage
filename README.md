@@ -9,6 +9,8 @@ This project is implemented in Team.
 
 Analyzed the bias in news coverage on the Ukrainian-Russian War between the United States and Russia using sentiment analysis, named entity recognition, topic modeling, and Policy BERT to understand the narrative discrepancies in news coverage and invoke a collective consciousness on the need for truthful news coverage.
 
+**Data:** **3000 full news articles from March 25, 2022 to April 24th 2022** that contain the term or combination of terms, “Ukraine”, “Ukrainian”, “украина”, “украине”, “украиной” (all of which are different variations of “Ukraine”).
+
 This is a course project for INFO 5330: Technology, Media, and Democracy at Cornell Tech.
 
 Chenran implemented `nlp_by_chenran.ipynb` in [Google Colab](https://colab.research.google.com/drive/1K4QYQjjhN0XuaImEH38h9TMH4FWAZKyF?usp=sharing) to utilize multiple NLP models to analyze web-scraped information.
@@ -43,7 +45,7 @@ We also used an English-Russian translator so that Russian texts could be fed in
 **Policy BERT** - This is an NLP model that was trained on manually annotated sentences that classify text into seven categories: “economy, external relations, fabric of society, freedom and democracy, political system, welfare and the quality of life, and social groups [[9\]](https://www.zotero.org/google-docs/?r37IH5).
 
 ### **Technical Implementation, Results, and Discussion**
-To gather our data, we resorted to web scraping news from Russian and United Statian news outlets with the highest readership using an API [[10\]](https://www.zotero.org/google-docs/?HvVZe7).We did this to capture the largest percentage of news readers to see what information they are exposed to. For Russian news we web scraped from Lenta, RT, and RBC; for United Statian news we web scraped from the New York Times, the Wall Street Journal, USA Today, and the Washington Post. We gathered approximately 3000 full news articles from March 25, 2022 to April 24th 2022 that contain the term or combination of terms, “Ukraine”, “Ukrainian”, “украина”, “украине”, “украиной” (all of which are different variations of “Ukraine”). Russian texts were translated into English so that they could be processed.
+To gather our data, we resorted to web scraping news from Russian and United Statian news outlets with the highest readership using an API [[10\]](https://www.zotero.org/google-docs/?HvVZe7).We did this to capture the largest percentage of news readers to see what information they are exposed to. For Russian news we web scraped from Lenta, RT, and RBC; for United Statian news we web scraped from the New York Times, the Wall Street Journal, USA Today, and the Washington Post. We gathered approximately **3000 full news articles from March 25, 2022 to April 24th 2022** that contain the term or combination of terms, “Ukraine”, “Ukrainian”, “украина”, “украине”, “украиной” (all of which are different variations of “Ukraine”). Russian texts were translated into English so that they could be processed.
 
 *We fed this text into the models aforementioned. Below are our results.*
 
